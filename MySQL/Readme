@@ -1,0 +1,11 @@
+Steps to Connect to MySQL DB 
+If you get below error making a connection
+MySQL Python client got 1045 (28000): Access denied for user 'root'@'localhost' fix using the below
+   
+   Connect to MySQL
+   mysql> CREATE USER 'user'@'localhost' IDENTIFIED BY 'password'; 
+Query OK, 0 rows affected (0.00 sec)
+ (User can be any user name (Viky) is the user name used in Jupyter Notebook. Password will be the password identified for the user)
+
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost'; user = Viky or user name created by you!!
+Query OK, 0 rows affected (0.00 sec)
