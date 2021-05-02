@@ -1,4 +1,7 @@
-Steps to Connect to MySQL DB 
+Steps to Connect to MySQL DB are attached in the Jupyter notebook
+
+
+*************************************************************************************************************************************
 If you get below error making a connection
 MySQL Python client got 1045 (28000): Access denied for user 'root'@'localhost' fix using the below
    
@@ -9,3 +12,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost'; user = Viky or user name created by you!!
 Query OK, 0 rows affected (0.00 sec)
+
+*****************************************************************************************************************************************************************
+Solution copied with courtesy from
+https://stackoverflow.com/questions/58369585/mysql-python-client-got-1045-28000-access-denied-for-user-rootlocalhost#:~:text=Basically%20it's%20saying%20that%20the,all%20the%20privileges%20to%20it.&text=Replacing%20the%20root%20in%20the,user%20%2C%20the%20error%20is%20gone.
